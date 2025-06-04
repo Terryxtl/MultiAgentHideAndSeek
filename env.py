@@ -238,7 +238,7 @@ class raw_env(ParallelEnv, EzPickle):
 
         for agent_id in self.possible_agents:
             agent_obj = self.agent_objs[agent_id]
-            placed_this_agent = False
+            placed = False
 
             if agent_id in self.initial_position_config:
                 pos_config = self.initial_position_config[agent_id]
